@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="幼児の暇つぶしに簡単にできるゲームです。このゲームは、日本で希少なゆるキャラ動物ウォンバットを紹介しています。">
+  <title>簡単な幼児用のゲーム</title>
+  <link rel="stylesheet" href="/css/common.css">
+</head>
+<body>
+  <a href="#main" class="screen-reader-text">本文までスキップ</a>
+  <header class="l-header">
+    <div class="l-wrapper">
+      <h1 class="l-header__title">
+        <span class="screen-reader-text">幼児用のゲーム</span>
+        <a href="/index.html" class="p-logo">
+          <img src="/images/images/log.png" srcset="/images/images/log.png, /images/images/log@2x.png 2x" alt="ウォンバットを応援します">
+        </a>
+      </h1>
+      <nav class="l-header__nav">
+        <h2 class="screen-reader-text">サイト内メニュー</h2>
+        <button type="button" class="js-button-hamburger button button--hamburger" aria-controls="global-nav" aria-expanded="false">
+          <span class="button--hamburger__line">
+            <span class="screen-reader-text">メニューを開閉する</span>
+          </span>
+        </button>
+        <ul id="global-nav" class="l-global-nav" lang="en">
+          <li class="l-global-nav__item"><a href="/index.html">wombat</a></li>
+          <li class="l-global-nav__item"><a href="/place/index.html">place</a></li>
+          <li class="l-global-nav__item"><a href="/photo/index.html">photo</a></li>
+          <li class="l-global-nav__item  this"><a href="/game/index.html">game</a></li>
+          <li class="l-global-nav__item"><a href="/about/index.html">about</a></li>
+        </ul>
+      </nav>
+      <span class="l-header-cracker"><img src="/images/images/cracker.png" alt=""></span>
+      <span class="l-header-star" id="js-star"><img src="/images/images/star.png" alt=""></span>
+    </div>
+    <!-- /.l-wrapper -->
+
+  </header>
+  <main id="main" class="l-main">
+    <div class="l-section">
+
+      <div class="l-wrapper">
+        <h1 class="heading heading--primary">
+                  <span lang="en">game</span>
+                  <span class="heading__caption">ウォンバットのゲーム</span>
+      </h1>
+        <article class="l-section__game">
+          <h2 class="mark mark-s gray">しんけいすいじゃく</h2>
+          <button type="button" lang="en" id="js-clear" class="button button-clear">clear</button>
+          <ul id="card"></ul>
+        </article>
+        <article class="l-section__game">
+          <h2 class="mark mark-s gray">スロットゲーム</h2>
+          <button type="button" id="js-spin" class="button button-spin">スタート</button>
+          <button type="button" id="js-stop" class="button button-stop js-active">ストップ</button>
+          <div class="grid grid--justify">
+            <div class="grid__item grid__item--sp--2 grid__item--tab--2 grid__item--pc--2">
+              <img src="/images/images/card1.png" alt="" id="left">
+            </div>
+            <div class="grid__item grid__item--sp--2 grid__item--tab--2 grid__item--pc--2">
+              <img src="/images/images/card2.png" alt="" id="center">
+            </div>
+            <div class="grid__item grid__item--sp--2 grid__item--tab--2 grid__item--pc--2">
+              <img src="/images/images/card3.png" alt="" id="right">
+            </div>
+          </div>
+          <!-- /.grid grid--justify -->
+        </article>
+      </div>
+      <!-- /.l-wrapper -->
+      <div class="l-wrapper--sp--full">
+        <article class="l-section__game puzzlegame">
+          <h2 class="mark mark-s gray">パズル</h2>
+          <button type="button" id="start" lang="en" class="button button-clear">start</button>
+          <ul id="puzzle"></ul>
+          <div id="time">0秒</div>
+        </article>
+      </div>
+      <!-- /.l-wrapper--sp--full-->
+      <div class="l-wrapper">
+        <article class="l-section__game">
+          <ul class="list">
+            <li class="list__item"><a href="/photo/index.html" class="button button--primary button-link">ウォンバットの写真だよ</a></li>
+            <li class="list__item"><a href="/index.html#link1" class="button button--primary button-link">ウォンバットのうんちは四角だよ</a></li>
+            <li class="list__item"><a href="http://www.wombat-tv.com/" target="-blank" class="button button--primary button-link">ウォンバットテレビ（<span class="orange">いま、なにしてるかな？</span>）</a></li>
+          </ul>
+        </article>
+      </div>
+      <!-- /.l-wrapper -->
+    </div>
+    <!-- /.l-section -->
+  </main>
+  <footer class="l-footer">
+    <div class="l-footer__nav">
+      <div class="l-wrapper l-wrapper--sp--full">
+        <ul class="l-footer__nav__list" lang="en">
+          <li class="l-footer__nav__item"><a href="/index.html">wombat</a></li>
+          <li class="l-footer__nav__item"><a href="/place/index.html">place</a></li>
+          <li class="l-footer__nav__item"><a href="/photo/index.html">photo</a></li>
+          <li class="l-footer__nav__item"><a href="/about/index.html">about</a></li>
+        </ul>
+      </div>
+      <!-- /.l-wrapper -->
+    </div>
+    <!-- /.l-footer-nav -->
+    <div class="l-footer__siteinfo">
+      <div class="l-wrapper">
+        <p class="l-footer__copyright" lang="en"><small>&copy; 2019 <a href="mailto:info@">morimori</a> All Right Reserved.</small></p>
+      </div>
+      <!-- /.l-wrapper -->
+    </div>
+    <!-- /.l-footer-siteinfo -->
+  </footer>
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script src="/js/app-game.js"></script>
+</body>
+</html>
